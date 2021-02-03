@@ -53,10 +53,10 @@ class SongDetailVM {
     private func releaseDisplayData() -> String {
         //TODO 3.2: Use the format "MMMM dd,yyyy" for the release date
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "MMMM-dd-yyyy"
         let releaseDate = dateFormatter.string(from: dataModel.releaseDate)
         
-        return releaseDate
+        return "Release: \(releaseDate)"
     }
     
 }
